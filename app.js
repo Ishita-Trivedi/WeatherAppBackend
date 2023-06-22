@@ -8,6 +8,6 @@ export const app = express();
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 app.use(express.json());
 
-import { myRoutes } from "./routes/myRoutes.js";
+import myRoutes from "./routes/myRoutes.js";
 
 app.use("/api/v1", myRoutes);

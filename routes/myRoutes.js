@@ -1,3 +1,8 @@
 import express from "express";
+import { contact } from "../controllers/otherController.js";
 
-export const myRoutes = express.Router();
+const myRoutes = express.Router();
+
+myRoutes.route("/contact").post(contact);
+
+export default myRoutes;
